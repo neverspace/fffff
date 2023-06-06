@@ -1,0 +1,116 @@
+html {
+	text-align: center;
+}
+body {
+	display: inline-block;
+	text-align: left;
+}
+
+#disc {
+	animation: spin 1.8s infinite linear; /* 1.8s == 33rpm */
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+#cupboard {
+	background-color: pink;
+	display: inline-block;
+	width: 100%;
+	padding: 3%;
+}
+
+#cupboard img {
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+
+	pointer-events: none;
+	user-select: none;
+}
+
+.cover {
+	border: 2px solid black;
+	border-radius: 2px;
+	box-shadow: 5px 5px #333;
+	position: relative;
+	z-index: 1;
+}
+
+#front {
+	margin-right: -2em;
+}
+
+#back {
+	margin-left: -2em;
+}
+
+h1 {
+	font-family: monospace;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#cupboard audio {
+	margin-top: 2em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: 100%;
+	height: 20px;
+}
+
+@media (max-width: 600px) {
+	#cupboard img {
+		height: 150px;
+		width: 150px;
+	}
+	#cupboard {
+		width: 80%;
+	}
+	#cupboard audio {
+		margin-bottom: 0em;
+	}
+	body {
+		width: 100%;
+	}
+}
+
+@media (max-width: 520px) {
+	#cupboard img {
+		height: 125px;
+		width: 125px;
+	}
+}
+
+#tracklist .track_time {
+	font-family: monospace;
+	margin-right: 1em;
+	font-size: 85%;
+	background-color: lightgray;
+	padding: 0.2%;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#tracklist .track_time:hover {
+	background-color: gray;
+}
+
+#tracklist .track_name {
+	font-family: "Georgia", "Bitstream Vera Serif", serif;
+}
+
+#tracklist p {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#tracklist {
+	margin-left: 2em;
+}
