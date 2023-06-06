@@ -88,6 +88,17 @@ h1 {
 	}
 }
 
+@media (max-width: 480px) {
+	html {
+		font-size: 75%;
+	}
+	#cupboard img {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+
 #tracklist .track_time {
 	font-family: monospace;
 	margin-right: 1em;
